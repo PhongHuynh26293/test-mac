@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- cdn bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .title {
+        font-size: 32px;
+      }
+      .active {
+        color: yellow;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">DOM</h1>
+    <hr />
+    <input id="brand" type="text" value="cybersoft" />
+
+    <p id="content-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, tenetur.
+    </p>
+
+    <p id="content-2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, inventore!
+    </p>
+    <hr />
+    <button onclick="showMessage()">Show Message</button>
+
+    <hr />
+    <h3>bài tập 1</h3>
+    <p id="content-3">nội dung trước khi thay đổi</p>
+    <button onclick="baitap1()">Nhấn em đi</button>
+
+    <hr />
+    <h3>bài tập 2</h3>
+    <p id="content-4">Lorem ipsum dolor sit amet.</p>
+    <button onclick="toggleHide()">Toggle Ẩn/Hiện</button>
+
+    <hr />
+    <h3>bai tâp 3</h3>
+    <button onclick="turnOff()">TẮT ĐÈN</button>
+    <img id="img-1" src="./img/pic_bulboff.gif" alt="" />
+    <button onclick="turnOn()">Bật Đèn</button>
+
+    <hr />
+    <h4>bài tập 4</h4>
+    <div>
+      <input id="input-1" placeholder="Text box" />
+      <button id="button-1">button</button>
+    </div>
+    <button onclick="disableInputAndButton()">
+      click de disable input va button
+    </button>
+
+    <hr />
+    <h4>bài tập 5</h4>
+    <div>
+      <label>Tài khoản</label>
+      <input id="input-username" />
+    </div>
+
+    <div>
+      <label>Mật khẩu</label>
+      <input id="input-password" />
+    </div>
+    <button onclick="login()">Dăng nhập</button>
+    <div id="output-1" class="hide"></div>
+
+    <hr />
+    <div id="container">
+      <h3>Welcome</h3>
+    </div>
+    <hr />
+    <div class="mb-3 w-50">
+      <label class="form-label">Tên sản phẩm</label>
+      <input type="text" class="form-control" id="product-name" />
+    </div>
+    <div class="mb-3 w-50">
+      <label class="form-label">Giá sản phẩm</label>
+      <input type="text" class="form-control" id="product-price" />
+    </div>
+    <button class="btn btn-success mb-5" onclick="addProduct()">
+      Thêm sản phẩm
+    </button>
+    <button class="btn btn-success mb-5" onclick="addProduct2()">
+      Thêm sản phẩm2
+    </button>
+    <table class="table w-50">
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+      <tbody id="product-list"></tbody>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="./index.js"></script>
+  </body>
+</html>
